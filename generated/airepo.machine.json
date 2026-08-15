@@ -1,0 +1,313 @@
+{
+  "canonical_sources": [
+    {
+      "semantic_owner_id": "SO-01",
+      "sha256": "d2ffa9ea94ea7063493b9999aebe3ec7cdce20e8c8648f0ed734b7d08d3ea79b",
+      "title": "Framework Charter and Scope"
+    },
+    {
+      "semantic_owner_id": "SO-02",
+      "sha256": "7887cd04d4feb204e024e663115aa9478459dd549e063da5a3a7883f78022531",
+      "title": "Principles, Authority and Ownership"
+    },
+    {
+      "semantic_owner_id": "SO-03",
+      "sha256": "956eaf58a05ae59ad141e9777e11d240555f4d8dad9124c23d3d3dd739d8a217",
+      "title": "Semantic Model"
+    },
+    {
+      "semantic_owner_id": "SO-04",
+      "sha256": "fbf4768ea281b2ed05c9e04f55c472db24e75a1d9e7b54a4b9decae11cd22282",
+      "title": "Normative Rules"
+    },
+    {
+      "semantic_owner_id": "SO-05",
+      "sha256": "be8f76f4709ca33a47d389245ba83e699041331d34449f380f100c0009e6a272",
+      "title": "Adoption Profiles"
+    },
+    {
+      "semantic_owner_id": "SO-06",
+      "sha256": "e0de803648f113ee97b46ac60073109a8592b7cdb0025e3c3a295597394cadb6",
+      "title": "Assessment and Repository Design Method"
+    },
+    {
+      "semantic_owner_id": "SO-07",
+      "sha256": "f18b3c3c176e66c06d904ce61144458477191ecc9a2fe45a10964c64a60ab651",
+      "title": "AI Agent Execution"
+    },
+    {
+      "semantic_owner_id": "SO-08",
+      "sha256": "83e4d9a0010a5f00de1afcc1fcce3de8b757c871d66031ff4fafca75e2eed108",
+      "title": "Migration and Compatibility"
+    },
+    {
+      "semantic_owner_id": "SO-09",
+      "sha256": "69d06c59f30f26789c4da4999dea8c5309226c456677d905558a010b06f7788e",
+      "title": "Validation and Conformance"
+    },
+    {
+      "semantic_owner_id": "SO-10",
+      "sha256": "629b217d363969729d3c668d6182d112bdabc4d5decefeee7c58def73408bf7b",
+      "title": "Release and Governance"
+    }
+  ],
+  "framework_name": "AIRepo — The AI-Ready Repository Framework",
+  "framework_version": "1.0.0",
+  "localization_contract": {
+    "canonical_locale": "en",
+    "stable_identifiers": [
+      "semantic_owner_id",
+      "rule_id",
+      "release_set_id",
+      "sha256",
+      "schema_key",
+      "repository_path"
+    ]
+  },
+  "manifest_sha256": "542617d037cc0fff600b63d5c7eeba5c7273bbb017ac1c86a3d732e19417b133",
+  "release_set_id": "AIREPO-1.0.0",
+  "reserved_rule_ids": [
+    "EVAL-001"
+  ],
+  "rules": [
+    {
+      "applicability": "CORE",
+      "id": "AUTH-001",
+      "name": "Project authority precedence",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "AUTH-002",
+      "name": "Evidence versus authority",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL CORE",
+      "id": "COMPAT-001",
+      "name": "Shared contract authority",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL CORE",
+      "id": "COMPAT-002",
+      "name": "Cross-boundary compatibility",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "COMPLEX-001",
+      "name": "Minimal structural change",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "COMPLEX-002",
+      "name": "Complexity justification",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE SAFETY",
+      "id": "CONF-001",
+      "name": "No uncontrolled protected data",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL ORGANIZATION RULE",
+      "id": "DATA-001",
+      "name": "Dataset provenance",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL ORGANIZATION RULE",
+      "id": "DATA-002",
+      "name": "Storage fitness",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL ORGANIZATION RULE",
+      "id": "EVAL-002",
+      "name": "Evaluator revision and compatibility metadata",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE EXECUTION RULE",
+      "id": "EXEC-001",
+      "name": "Bounded execution unit",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "MAP-001",
+      "name": "Semantic before physical",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL CORE",
+      "id": "MAP-002",
+      "name": "Ecosystem mapping",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "MAP-003",
+      "name": "Canonical navigation",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL CORE",
+      "id": "MIG-001",
+      "name": "Compatibility-preserving migration",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL CORE",
+      "id": "MIG-002",
+      "name": "Rollback definition",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "OWN-001",
+      "name": "Single Authority Owner",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "OWN-002",
+      "name": "Canonical System of Record",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL ORGANIZATION RULE",
+      "id": "PROMPT-001",
+      "name": "Versioned behavior asset",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL ORGANIZATION RULE",
+      "id": "PROMPT-002",
+      "name": "Component visibility",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "PROV-001",
+      "name": "Provider-neutral intent",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "PROV-002",
+      "name": "External Capability First",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "SCOPE-001",
+      "name": "Active consumer gate",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "SCOPE-002",
+      "name": "No speculative structure",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL ORGANIZATION/AUTHORITY RULE",
+      "id": "TRACE-001",
+      "name": "Observation boundary",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CONDITIONAL ORGANIZATION RULE",
+      "id": "TRACE-002",
+      "name": "Controlled promotion",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "VAL-001",
+      "name": "Claim-to-evidence traceability",
+      "owner": "SO-04",
+      "status": "active"
+    },
+    {
+      "applicability": "CORE",
+      "id": "VAL-002",
+      "name": "No maturity self-assignment",
+      "owner": "SO-04",
+      "status": "active"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "semantic_owners": [
+    {
+      "id": "SO-01",
+      "title": "Framework Charter and Scope"
+    },
+    {
+      "id": "SO-02",
+      "title": "Principles, Authority and Ownership"
+    },
+    {
+      "id": "SO-03",
+      "title": "Semantic Model"
+    },
+    {
+      "id": "SO-04",
+      "title": "Normative Rules"
+    },
+    {
+      "id": "SO-05",
+      "title": "Adoption Profiles"
+    },
+    {
+      "id": "SO-06",
+      "title": "Assessment and Repository Design Method"
+    },
+    {
+      "id": "SO-07",
+      "title": "AI Agent Execution"
+    },
+    {
+      "id": "SO-08",
+      "title": "Migration and Compatibility"
+    },
+    {
+      "id": "SO-09",
+      "title": "Validation and Conformance"
+    },
+    {
+      "id": "SO-10",
+      "title": "Release and Governance"
+    }
+  ]
+}

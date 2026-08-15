@@ -1,0 +1,58 @@
+{
+  "$id": "urn:airepo:machine-projection:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "canonical_sources": {
+      "minItems": 10,
+      "type": "array"
+    },
+    "framework_name": {
+      "const": "AIRepo — The AI-Ready Repository Framework"
+    },
+    "framework_version": {
+      "type": "string"
+    },
+    "localization_contract": {
+      "type": "object"
+    },
+    "manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "release_set_id": {
+      "type": "string"
+    },
+    "reserved_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "rules": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "semantic_owners": {
+      "minItems": 10,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "framework_name",
+    "framework_version",
+    "release_set_id",
+    "manifest_sha256",
+    "canonical_sources",
+    "semantic_owners",
+    "rules",
+    "reserved_rule_ids",
+    "localization_contract"
+  ],
+  "title": "AIRepo Machine Projection",
+  "type": "object"
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use AIRepo in research, engineering guidance, or an assessment, please cite it using this metadata."
+title: "AIRepo: The AI-Ready Repository Framework"
+type: software
+authors:
+  - family-names: Miliutin
+    given-names: Andrei
+version: 1.0.0
+date-released: 2026-08-15
+license: Apache-2.0
+keywords:
+  - AI-centred engineering
+  - AI agents
+  - repository organization
+  - repository governance
+  - software engineering
+  - agentic engineering
+
+url: "https://miliutin.com"
+abstract: "An open framework for making software repositories ready for reliable human-AI engineering through explicit authority, ownership, lifecycle, provenance, compatibility, and validation boundaries."

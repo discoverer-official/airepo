@@ -1,0 +1,31 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Runtime / build / cache
+.tmp/
+tmp/
+.cache/
+coverage/
+dist/
+build/
+__pycache__/
+*.pyc
+node_modules/
+
+# Local assessment scratch
+.local/
+scratch/
