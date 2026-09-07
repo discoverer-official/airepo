@@ -27,9 +27,11 @@ For each material asset resolve, where applicable:
 
 Use `framework/SO-04.md`. For every relevant Rule ID classify applicability as `applicable`, `not applicable`, or `unresolved`. A rule is not `not applicable` merely because evidence is missing.
 
-## 5. Acquire evidence read-only
+## 5. Acquire evidence read-only and check fitness
 
 When evidence is missing, stale, or ambiguous, acquire it read-only where safely possible. Do not convert missing evidence into an authority-bearing conclusion.
+
+For a material Claim, confirm that the evidence binds the claimed subject at the needed precision and that the verification method can actually observe the property or boundary being claimed. A green test, mock, report, or exact SHA does not prove a broader property it cannot observe.
 
 ## 6. Record results
 
@@ -63,3 +65,11 @@ A completed assessment or adoption should leave:
 - migration/rollback where required;
 - validation evidence;
 - only the Human Decisions that existing authority genuinely requires.
+
+## Routine Fast Path
+
+For Class A/B low-risk work that does not touch authority, compatibility, safety, behavior/reproducibility, cross-revision evidence reuse, or Class C/D semantics, use the smallest path:
+
+`authority as needed → concrete failure → applicable Rule → smallest change → focused validation → done`
+
+Escalate to the full Claim/Evidence Fitness path only when the excluded concerns become material or a PASS is contested/materially relied upon.

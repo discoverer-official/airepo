@@ -43,21 +43,23 @@ Start with [`framework/SO-01.md`](framework/SO-01.md), then use the [Quick Start
 
 - **Project authority wins.** Applying AIRepo does not make the framework part of a consumer project's authority hierarchy.
 - **Semantic before physical.** Repository organization follows responsibility, ownership, consumers, lifecycle, and compatibility—not a preferred folder pattern.
-- **Evidence before authority-bearing claims.** Missing evidence should trigger read-only acquisition where possible; unresolved evidence fails closed before consequential claims or actions.
+- **Evidence must fit the claim.** Exact revision binding is necessary but not sufficient: evidence must be capable of observing the property/boundary being claimed. Missing, stale, incomparable, or unobservable evidence cannot be promoted to PASS.
 - **Minimal structural change.** Preserve acceptable organization and introduce structure only for real consumers or reproducible failure modes.
 - **Provider and technology neutrality.** AIRepo does not depend on a specific LLM, repository host, language, runtime, or project-management system.
 - **Generated views are not authority.** Machine-readable and localized projections are derived from canonical semantic owners and must detect staleness.
 
-## Release 1.0.0
+## Release 1.1.0
 
-`1.0.0` is the first public release. The release was assembled from a pre-public framework lineage that was independently qualified and validated against two independent consumer scenarios before promotion. Historical pre-public identifiers are retained only in release provenance evidence.
+`1.1.0` is a backward-compatible minor release derived from the accepted AIROF v3.1.0 working lineage. It adds claim-relative Evidence Fitness (`VAL-003`) and simplifies routine usage through a Class A/B Fast Path while preserving all 1.0.0 active Rule IDs and consumer validity.
 
 Canonical public semantics live only in [`framework/`](framework/).
 
-- [`release/manifest.md`](release/manifest.md) binds the exact canonical source hashes.
-- [`generated/airepo.machine.json`](generated/airepo.machine.json) is a non-authoritative deterministic machine projection.
-- [`localization/`](localization/) contains revision-bound localized projections.
-- [`release/provenance/`](release/provenance/) contains pre-public validation and qualification evidence.
+- [`release/manifest.md`](release/manifest.md) binds the exact canonical source hashes and source AIROF release provenance.
+- [`generated/airepo.machine.json`](generated/airepo.machine.json) is a non-authoritative deterministic machine projection published to preserve the established public distribution surface.
+- [`localization/`](localization/) contains revision-bound localized projections published as an optional distribution surface.
+- [`release/provenance/`](release/provenance/) contains historical qualification/freeze evidence.
+
+Machine and localized projections are not required for AIRepo semantic authority or qualification. They are included in this public distribution for compatibility and convenience.
 
 ## Machine consumption
 
